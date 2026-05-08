@@ -234,7 +234,7 @@ body{
 /* ═══════════════════════════════════════════════════
    DATA
 ═══════════════════════════════════════════════════ */
-const TICKER = ["HS Services", "✦", "Udyam Registered", "✦", "MSME Certified", "✦", "NIC 61900", "✦", "Moradabad UP", "✦", "Est. 2025", "✦", "UDYAM-UP-59-0079830", "✦", "Telecom & Trading", "✦", "HS Services", "✦", "Udyam Registered", "✦", "MSME Certified", "✦", "NIC 61900", "✦", "Moradabad UP", "✦", "Est. 2025", "✦", "UDYAM-UP-59-0079830", "✦", "Telecom & Trading", "✦"];
+const TICKER = ["Text SMS Services", "✦", "Udyam Registered", "✦", "MSME Certified", "✦", "NIC 61900", "✦", "Moradabad UP", "✦", "Est. 2025", "✦", "UDYAM-UP-59-0079830", "✦", "Telecom & Trading", "✦", "Text SMS Services", "✦", "Udyam Registered", "✦", "MSME Certified", "✦", "NIC 61900", "✦", "Moradabad UP", "✦", "Est. 2025", "✦", "UDYAM-UP-59-0079830", "✦", "Telecom & Trading", "✦"];
 
 const NAV = [{ l: "About", h: "#about" }, { l: "Services", h: "#services" }, { l: "Portfolio", h: "#portfolio" }, { l: "Company", h: "#company" }, { l: "Certificate", h: "#certificate" }, { l: "Contact", h: "#contact" }];
 
@@ -257,7 +257,7 @@ const SERVICES = [
 const COMPANY_BLOCKS = [
   {
     label: "Registration Details", title: "Udyam Certificate", rows: [
-      { k: "Enterprise Name", v: "HS SERVICES", gold: true },
+      { k: "Enterprise Name", v: "TEXT SMS SERVICES", gold: true },
       { k: "Udyam Reg. No.", v: "UDYAM-UP-59-0079830" },
       { k: "Type of Enterprise", v: "Micro Enterprise" },
       { k: "Major Activity", v: "Trading" },
@@ -291,7 +291,7 @@ const COMPANY_BLOCKS = [
   {
     label: "Contact & Banking", title: "Get In Touch", rows: [
       { k: "Mobile", v: "+91 97582 90120", gold: true },
-      { k: "Email", v: "hsservices899@gmail.com" },
+      { k: "Email", v: "textsms@gmail.com" },
       { k: "Bank Name", v: "Axis Bank" },
       { k: "IFSC Code", v: "UTIB0003735" },
       { k: "Employment (M/F)", v: "2 Male / 2 Female" },
@@ -315,10 +315,10 @@ const SLIDES = [
 ];
 
 const FAQS = [
-  { q: "What is HS Services' primary business?", a: "HS Services is a Udyam-registered micro enterprise specializing in Telecommunications (NIC 61900) and Trading. We operate under MSME certification from the Government of India, headquartered in Moradabad, Uttar Pradesh." },
-  { q: "How can I access MSME benefits through HS Services?", a: "Through our Udyam registration (UDYAM-UP-59-0079830), we help partners access Priority Sector Lending (PSL), government schemes, GeM procurement portal, and TReDS financing platform." },
-  { q: "What is HS Services' Udyam Registration Number?", a: "Our official Udyam Registration Number is UDYAM-UP-59-0079830, registered on 28 July 2025, verified at udyamregistration.gov.in." },
-  { q: "How many employees does HS Services have?", a: "HS Services currently has 4 employees — 2 Male and 2 Female — as a growing micro enterprise committed to inclusive employment practices." },
+  { q: "What is Text SMS Services' primary business?", a: "Text SMS Services is a Udyam-registered micro enterprise specializing in Telecommunications (NIC 61900) and Trading. We operate under MSME certification from the Government of India, headquartered in Moradabad, Uttar Pradesh." },
+  { q: "How can I access MSME benefits through Text SMS Services?", a: "Through our Udyam registration (UDYAM-UP-59-0079830), we help partners access Priority Sector Lending (PSL), government schemes, GeM procurement portal, and TReDS financing platform." },
+  { q: "What is Text SMS Services' Udyam Registration Number?", a: "Our official Udyam Registration Number is UDYAM-UP-59-0079830, registered on 28 July 2025, verified at udyamregistration.gov.in." },
+  { q: "How many employees does Text SMS Services have?", a: "Text SMS Services currently has 4 employees — 2 Male and 2 Female — as a growing micro enterprise committed to inclusive employment practices." },
 ];
 
 /* ═══════════════════════════════════════════════════
@@ -425,7 +425,7 @@ function Loader({ onDone }) {
     <div id="hs-loader">
       <div className="ldr-bg-grid" />
       <div className="ldr-orb" />
-      <div className="ldr-title">HS <em>Services</em></div>
+      <div className="ldr-title">Text SMS <em>Services</em></div>
       <div className="ldr-line"><div className="ldr-fill" /></div>
       <div className="ldr-pct">Loading · {pct}%</div>
     </div>
@@ -461,7 +461,7 @@ function Navbar() {
   return (
     <nav style={{ position: "fixed", top: 0, left: 0, right: 0, zIndex: 1000, padding: "0 4rem", display: "flex", alignItems: "center", justifyContent: "space-between", height: "72px", background: scrolled ? "rgba(248,245,239,0.97)" : "rgba(248,245,239,0.88)", backdropFilter: "blur(32px)", borderBottom: `1px solid ${scrolled ? "#E5DDD0" : "transparent"}`, transition: "all 0.5s cubic-bezier(0.23,1,0.32,1)", boxShadow: scrolled ? "0 4px 40px rgba(28,25,23,0.06)" : "none" }}>
       <div style={{ fontFamily: "'Cormorant Garamond',serif", fontSize: "1.9rem", fontWeight: 700, color: "#1C1917", letterSpacing: "-0.5px", cursor: "none" }}>
-        HS <span className="gold">Services</span>
+        Text SMS <span className="gold">Services</span>
       </div>
       <ul style={{ display: "flex", gap: "2.5rem", listStyle: "none" }} className="r-hide">
         {NAV.map(n => (
@@ -536,10 +536,10 @@ function Hero() {
           MSME · Udyam Certified · Since 2025
         </div>
         <h1 className="h-a2" style={{ fontFamily: "'Cormorant Garamond',serif", fontSize: "clamp(3.8rem,8.5vw,7.5rem)", fontWeight: 700, lineHeight: 0.95, letterSpacing: "-3px", marginBottom: "1.8rem", color: "#1C1917" }}>
-          Premium<br /><span className="gold">Telecom</span><br />Solutions
+          Text<br /><span className="gold">SMS</span><br />Services
         </h1>
         <p className="h-a3" style={{ fontSize: "1.1rem", color: "#7A6F66", lineHeight: 1.9, maxWidth: 540, marginBottom: "3rem", fontWeight: 400 }}>
-          HS Services delivers cutting-edge telecommunications and trading from the heart of Moradabad, Uttar Pradesh — powering businesses with reliable, modern connectivity.
+          Text SMS Services delivers cutting-edge telecommunications and trading from the heart of Moradabad, Uttar Pradesh — powering businesses with reliable, modern connectivity.
         </p>
         <div className="h-a4 hero-btns" style={{ display: "flex", gap: "1rem", flexWrap: "wrap" }}>
           <HBtn href="#services" dark>Explore Services ↗</HBtn>
@@ -713,7 +713,7 @@ function About() {
           {/* Main tilt card */}
           <div ref={cardRef} onMouseMove={handleTilt} onMouseLeave={resetTilt} data-hover
             style={{ position: "absolute", width: "78%", height: "68%", top: 0, left: 0, background: "linear-gradient(145deg,#F2EDE2,#EDE5D4)", border: "1px solid #E5DDD0", padding: "2.8rem", display: "flex", flexDirection: "column", justifyContent: "flex-end", overflow: "hidden", transition: "transform 0.15s ease", cursor: "none" }}>
-            <div style={{ position: "absolute", top: -20, left: -20, fontFamily: "'Cormorant Garamond',serif", fontSize: "18rem", fontWeight: 700, color: "rgba(184,137,42,0.04)", lineHeight: 1, userSelect: "none", pointerEvents: "none" }}>HS</div>
+            <div style={{ position: "absolute", top: -20, left: -20, fontFamily: "'Cormorant Garamond',serif", fontSize: "18rem", fontWeight: 700, color: "rgba(184,137,42,0.04)", lineHeight: 1, userSelect: "none", pointerEvents: "none" }}>Text SMS</div>
             <span style={{ display: "inline-block", background: "linear-gradient(135deg,#B8892A,#7A5A18)", color: "#fff", padding: "0.35rem 0.9rem", fontSize: "0.68rem", fontWeight: 700, letterSpacing: "2px", textTransform: "uppercase", marginBottom: "1rem", width: "fit-content" }}>MSME · Micro Enterprise</span>
             <div style={{ fontFamily: "'Cormorant Garamond',serif", fontSize: "1.6rem", fontWeight: 700, color: "#1C1917", marginBottom: "0.5rem" }}>Trusted Telecom Partner</div>
             <div style={{ fontSize: "0.85rem", color: "#9C9280" }}>Moradabad, Uttar Pradesh</div>
@@ -740,7 +740,7 @@ function About() {
           <Badge>Who We Are</Badge>
           <Title><Gold>Future</Gold> of Connectivity</Title>
           <p style={{ fontSize: "1.05rem", color: "#7A6F66", lineHeight: 1.95, marginBottom: "1.5rem" }}>
-            HS Services is a Udyam-registered micro enterprise operating in the telecommunications sector under NIC code 61900 — Other Telecommunications Activities. MSME certified, enabling access to government schemes and priority sector lending.
+            Text SMS Services is a Udyam-registered micro enterprise operating in the telecommunications sector under NIC code 61900 — Other Telecommunications Activities. MSME certified, enabling access to government schemes and priority sector lending.
           </p>
           <p style={{ fontSize: "1.05rem", color: "#7A6F66", lineHeight: 1.95, marginBottom: "2.8rem" }}>
             Incorporated in July 2025 and headquartered at Rajkiye Kanya Inter College, Linepar, Moradabad, Uttar Pradesh — bringing a forward-thinking approach to telecom and trading services.
@@ -906,12 +906,12 @@ function MapSection() {
   return (
     <div style={{ position: "relative", height: 520, borderTop: "1px solid #E5DDD0", overflow: "hidden" }}>
       <iframe src="https://maps.google.com/maps?q=28.955058895420574,78.83925397805548&z=15&output=embed"
-        style={{ width: "100%", height: "100%", border: "none", filter: "sepia(20%) saturate(0.8) brightness(1.0)" }} allowFullScreen loading="lazy" title="HS Services Location" />
+        style={{ width: "100%", height: "100%", border: "none", filter: "sepia(20%) saturate(0.8) brightness(1.0)" }} allowFullScreen loading="lazy" title="Text SMS Services Location" />
       <div style={{ position: "absolute", top: "2.5rem", left: "3rem", background: "rgba(248,245,239,0.97)", border: "1px solid #E5DDD0", backdropFilter: "blur(24px)", padding: "2.2rem 2.5rem", maxWidth: 360, boxShadow: "0 24px 60px rgba(28,25,23,0.14)" }}>
         <div style={{ fontSize: "0.68rem", letterSpacing: "3px", textTransform: "uppercase", color: "#B8892A", marginBottom: "0.5rem" }}>Head Office</div>
-        <div style={{ fontFamily: "'Cormorant Garamond',serif", fontSize: "1.4rem", fontWeight: 700, color: "#1C1917", marginBottom: "0.9rem" }}>HS Services HQ</div>
+        <div style={{ fontFamily: "'Cormorant Garamond',serif", fontSize: "1.4rem", fontWeight: 700, color: "#1C1917", marginBottom: "0.9rem" }}>Text SMS Services HQ</div>
         <p style={{ fontSize: "0.85rem", color: "#7A6F66", lineHeight: 1.75, marginBottom: "1.3rem" }}>Rajkiye Kanya Inter College, Linepar, Moradabad, Uttar Pradesh — 244001</p>
-        {[["📍", "Linepar, Moradabad, UP 244001"], ["📞", "+91 97582 90120"], ["✉️", "hsservices899@gmail.com"], ["🕐", "Mon–Sat, 9AM – 6PM"]].map(([ic, t], i) => (
+        {[["📍", "Linepar, Moradabad, UP 244001"], ["📞", "+91 97582 90120"], ["✉️", "textsms@gmail.com"], ["🕐", "Mon–Sat, 9AM – 6PM"]].map(([ic, t], i) => (
           <div key={i} style={{ display: "flex", alignItems: "center", gap: "0.7rem", fontSize: "0.82rem", color: "#7A6F66", marginBottom: "0.5rem" }}>
             <span>{ic}</span><span>{t}</span>
           </div>
@@ -940,7 +940,7 @@ function Certificate() {
           <div style={{ width: 88, height: 88, background: "linear-gradient(135deg,#B8892A,#7A5A18)", margin: "0 auto 2rem", display: "flex", alignItems: "center", justifyContent: "center", fontSize: "2.2rem", boxShadow: "0 16px 40px rgba(184,137,42,0.25)" }}>🏛️</div>
           <div style={{ fontSize: "0.68rem", letterSpacing: "5px", textTransform: "uppercase", color: "#9C9280", marginBottom: "0.5rem" }}>Government of India · Ministry of MSME</div>
           <div style={{ fontFamily: "'Bebas Neue',sans-serif", fontSize: "2.2rem", letterSpacing: "4px", marginBottom: "0.3rem" }} className="gold">UDYAM-UP-59-0079830</div>
-          <div style={{ fontFamily: "'Cormorant Garamond',serif", fontSize: "2.2rem", fontWeight: 700, color: "#1C1917", marginBottom: "0.5rem" }}>HS SERVICES</div>
+          <div style={{ fontFamily: "'Cormorant Garamond',serif", fontSize: "2.2rem", fontWeight: 700, color: "#1C1917", marginBottom: "0.5rem" }}>Text SMS SERVICES</div>
           <div style={{ fontSize: "0.9rem", color: "#9C9280" }}>Micro Enterprise · Telecommunications · Trading</div>
           <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "0.9rem", marginTop: "2.8rem", textAlign: "left" }}>
             {CERT_ITEMS.map((r, i) => (
@@ -1048,7 +1048,7 @@ function Footer() {
                 marginBottom: "1.2rem",
               }}
             >
-              HS <span className="gold">Services</span>
+              Text SMS <span className="gold">Services</span>
             </div>
 
             <p
@@ -1214,7 +1214,7 @@ function Footer() {
             <ul style={{ listStyle: "none" }}>
               {[
                 "+91 9758290120",
-                "hsservices899@gmail.com",
+                "textsms@gmail.com",
                 "Moradabad UP 244001",
                 "Mon–Sat, 9AM–6PM",
               ].map((l) => (
@@ -1247,7 +1247,7 @@ function Footer() {
           }}
         >
           <p style={{ fontSize: "0.78rem" }}>
-            © 2025 HS Services. All rights reserved.
+            © 2025 Text SMS Services. All rights reserved.
           </p>
 
           <p style={{ fontSize: "0.78rem" }}>
@@ -1360,8 +1360,8 @@ function Contact() {
               {
                 icon: "✉️",
                 label: "Email Us",
-                val: "hsservices899@gmail.com",
-                href: "mailto:hsservices899@gmail.com",
+                val: "textsms@gmail.com",
+                href: "mailto:textsms@gmail.com",
               },
               {
                 icon: "📍",
@@ -1553,7 +1553,7 @@ function PrivacyPolicy() {
               fontWeight: 700,
             }}
           >
-            HS SERVICES
+            Text SMS SERVICES
           </div>
 
           <h1
@@ -1576,7 +1576,7 @@ function PrivacyPolicy() {
               maxWidth: "800px",
             }}
           >
-            At HS Services, we value your trust and are committed
+            At Text SMS Services, we value your trust and are committed
             to protecting your personal information and privacy.
           </p>
         </div>
@@ -1666,7 +1666,7 @@ function PrivacyPolicy() {
                 fontSize: "1rem",
               }}
             >
-              HS Services implements appropriate security measures
+              Text SMS Services implements appropriate security measures
               to protect your personal data against unauthorized
               access, disclosure or misuse.
             </p>
@@ -1772,7 +1772,7 @@ function PrivacyPolicy() {
                 fontSize: "1rem",
               }}
             >
-              HS Services reserves the right to update or modify
+              Text SMS Services reserves the right to update or modify
               this privacy policy at any time without prior notice.
             </p>
           </div>
@@ -1804,7 +1804,7 @@ function PrivacyPolicy() {
                 marginBottom: "0.6rem",
               }}
             >
-              HS Services
+              Text SMS Services
             </p>
 
             <p
@@ -1824,7 +1824,7 @@ function PrivacyPolicy() {
                 marginBottom: "0.6rem",
               }}
             >
-              Email: hsservices899@gmail.com
+              Email: textsms@gmail.com
             </p>
 
             <p
@@ -1869,7 +1869,7 @@ function TermsCondition() {
               fontWeight: 700,
             }}
           >
-            HS SERVICES
+            Text SMS SERVICES
           </div>
 
           <h1
@@ -1893,7 +1893,7 @@ function TermsCondition() {
             }}
           >
             Please read these terms and conditions carefully before
-            using HS Services and our website.
+            using Text SMS Services and our website.
           </p>
         </div>
 
@@ -1928,7 +1928,7 @@ function TermsCondition() {
                 fontSize: "1rem",
               }}
             >
-              By accessing or using HS Services, you agree to comply
+              By accessing or using Text SMS Services, you agree to comply
               with these terms and conditions, company policies and
               all applicable laws and regulations.
             </p>
@@ -1955,7 +1955,7 @@ function TermsCondition() {
                 fontSize: "1rem",
               }}
             >
-              HS Services provides telecommunications, trading and
+              Text SMS Services provides telecommunications, trading and
               related business services. All services are subject to
               availability and may be modified or discontinued at
               any time.
@@ -2012,7 +2012,7 @@ function TermsCondition() {
               }}
             >
               All payments and transactions must be completed in
-              accordance with agreed business terms. HS Services
+              accordance with agreed business terms. Text SMS Services
               reserves the right to refuse or cancel any order or
               transaction if necessary.
             </p>
@@ -2040,7 +2040,7 @@ function TermsCondition() {
               }}
             >
               All content, branding, graphics, logos and materials
-              on this website are the property of HS Services and
+              on this website are the property of Text SMS Services and
               may not be copied or reused without permission.
             </p>
           </div>
@@ -2066,7 +2066,7 @@ function TermsCondition() {
                 fontSize: "1rem",
               }}
             >
-              HS Services shall not be held responsible for any
+              Text SMS Services shall not be held responsible for any
               direct, indirect or incidental damages arising from
               the use or inability to use our website or services.
             </p>
@@ -2120,7 +2120,7 @@ function TermsCondition() {
                 fontSize: "1rem",
               }}
             >
-              HS Services reserves the right to update or modify
+              Text SMS Services reserves the right to update or modify
               these terms and conditions at any time without prior
               notice.
             </p>
@@ -2148,7 +2148,7 @@ function TermsCondition() {
                 marginBottom: "0.5rem",
               }}
             >
-              HS Services
+              Text SMS Services
             </p>
 
             <p
@@ -2170,7 +2170,7 @@ function TermsCondition() {
                 marginBottom: "0.5rem",
               }}
             >
-              Email: hsservices899@gmail.com
+              Email: textsms@gmail.com
             </p>
 
             <p
